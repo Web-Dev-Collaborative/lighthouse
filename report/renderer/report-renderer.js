@@ -166,13 +166,12 @@ export class ReportRenderer {
         {gatherMode: report.gatherMode}
       );
 
-      // For normal score gauges (not the fraction gauge), set the gauge href
-      // to link to the category.
       const gaugeWrapperEl = /** @type {HTMLAnchorElement} */ (
-        categoryGauge.querySelector('a.lh-gauge__wrapper'));
+        categoryGauge.querySelector('a.lh-gauge__wrapper, a.lh-fraction__wrapper'));
       if (gaugeWrapperEl) {
+        // Set the gauge href to link to the category.
         this._dom.safelySetHref(gaugeWrapperEl, `#${category.id}`);
-        // Handle clicks on scoregauge navigation without changing the page's URL.
+        // Handle clicks without changing the page's URL.
         gaugeWrapperEl.addEventListener('click', e => {
           if (!gaugeWrapperEl.matches('[href^="#"]')) return;
           const selector = gaugeWrapperEl.getAttribute('href');

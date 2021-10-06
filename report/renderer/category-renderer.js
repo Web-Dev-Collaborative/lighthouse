@@ -373,7 +373,6 @@ export class CategoryRenderer {
   renderCategoryFraction(category) {
     const tmpl = this.dom.createComponent('fraction');
     const wrapper = this.dom.find('a.lh-fraction__wrapper', tmpl);
-    this.dom.safelySetHref(wrapper, `#${category.id}`);
 
     const {numPassed, numAudits, totalWeight} = Util.calculateCategoryFraction(category);
 
