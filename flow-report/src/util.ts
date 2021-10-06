@@ -50,6 +50,20 @@ export function getScreenshot(reportResult: LH.ReportResult) {
   return fullPageScreenshot || null;
 }
 
+export function getFilmstripFrames(
+  reportResult: LH.ReportResult
+): Array<{data: string}> | undefined {
+  const filmstripAudit = reportResult.audits['screenshot-thumbnails'];
+  if (!filmstripAudit) return undefined;
+
+  const frameItems =
+    filmstripAudit.details &&
+    filmstripAudit.details.type === 'filmstrip' &&
+    filmstripAudit.details.items;
+
+  return frameItems || undefined;
+}
+
 export function getModeDescription(mode: LH.Result.GatherMode, strings: UIStringsType) {
   switch (mode) {
     case 'navigation': return strings.navigationDescription;
