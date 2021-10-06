@@ -182,14 +182,9 @@ export class DetailsRenderer {
   /**
    * Create small thumbnail with scaled down image asset.
    * @param {string} details
-   * @param {LH.Audit.Details.NodeValue=} node
    * @return {Element}
    */
-  _renderThumbnail(details, node) {
-    if (node) {
-      // ...
-    }
-
+  _renderThumbnail(details) {
     const element = this._dom.createElement('img', 'lh-thumbnail');
     const strValue = details;
     element.src = strValue;
@@ -219,11 +214,10 @@ export class DetailsRenderer {
    * based on the heading's valueType, unless the value itself has a `type`
    * property to override it.
    * @param {TableItemValue} value
-   * @param {TableItemValue} secondaryValue
    * @param {LH.Audit.Details.OpportunityColumnHeading} heading
    * @return {Element|null}
    */
-  _renderTableValue(value, secondaryValue, heading) {
+  _renderTableValue(value, heading) {
     if (value === undefined || value === null) {
       return null;
     }
@@ -284,9 +278,7 @@ export class DetailsRenderer {
       }
       case 'thumbnail': {
         const strValue = String(value);
-        const nodeValue = secondaryValue instanceof Object && secondaryValue.type === 'node' ?
-          secondaryValue : undefined;
-        return this._renderThumbnail(strValue, nodeValue);
+        return this._renderThumbnail(strValue);
       }
       case 'timespanMs': {
         const numValue = Number(value);
@@ -399,10 +391,9 @@ export class DetailsRenderer {
       }
 
       const value = item[heading.key];
-      const secondaryValue = heading.secondaryKey && item[heading.secondaryKey];
       let valueElement;
       if (value !== undefined && value !== null) {
-        valueElement = this._renderTableValue(value, secondaryValue, heading);
+        valueElement = this._renderTableValue(value, heading);
       }
 
       if (valueElement) {

@@ -150,8 +150,6 @@ declare module Details {
      * See legacy-javascript for an example.
      */
     key: string|null;
-    /** Optional secondary key. Used by thumbnail. */
-    secondaryKey?: string;
     /** Readable text label of the field. */
     text: IcuMessage | string;
     /**
@@ -184,8 +182,6 @@ declare module Details {
       * See legacy-javascript for an example.
       */
     key: string|null;
-    /** Optional secondary key. Used by thumbnail. */
-    secondaryKey?: string;
     /** Readable text label of the field. */
     label: IcuMessage | string;
     /**
