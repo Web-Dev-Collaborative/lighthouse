@@ -150,6 +150,8 @@ declare module Details {
      * See legacy-javascript for an example.
      */
     key: string|null;
+    /** Optional secondary key. Used by thumbnail. */
+    secondaryKey?: string;
     /** Readable text label of the field. */
     text: IcuMessage | string;
     /**
@@ -176,12 +178,14 @@ declare module Details {
 
   interface OpportunityColumnHeading {
     /**
-    * The name of the property within items being described.
+      * The name of the property within items being described.
       * If null, subItemsHeading must be defined, and the first table row in this column for
       * every item will be empty.
       * See legacy-javascript for an example.
       */
     key: string|null;
+    /** Optional secondary key. Used by thumbnail. */
+    secondaryKey?: string;
     /** Readable text label of the field. */
     label: IcuMessage | string;
     /**
