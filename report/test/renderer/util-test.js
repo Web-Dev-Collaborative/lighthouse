@@ -400,16 +400,58 @@ describe('util helpers', () => {
     it('returns passed audits and total audits', () => {
       const category = {
         auditRefs: [
-          {weight: 3, result: {score: 1, scoreDisplayMode: 'binary'}},
-          {weight: 2, result: {score: 1, scoreDisplayMode: 'binary'}},
-          {weight: 0, result: {score: 1, scoreDisplayMode: 'binary'}},
-          {weight: 1, result: {score: 0, scoreDisplayMode: 'binary'}},
+          {weight: 3, result: {score: 1, scoreDisplayMode: 'binary'}, group: 'diagnostics'},
+          {weight: 2, result: {score: 1, scoreDisplayMode: 'binary'}, group: 'diagnostics'},
+          {weight: 0, result: {score: 1, scoreDisplayMode: 'binary'}, group: 'diagnostics'},
+          {weight: 1, result: {score: 0, scoreDisplayMode: 'binary'}, group: 'diagnostics'},
         ],
       };
       const {numPassed, numAudits, totalWeight} = Util.calculateCategoryFraction(category);
       expect(numPassed).toEqual(3);
       expect(numAudits).toEqual(4);
       expect(totalWeight).toEqual(6);
+      const fraction = Util.calculateCategoryFraction(category);
+      expect(fraction).toEqual({
+        numAudits: 4,
+        numPassed: 3,
+        numInformative: 0,
+        totalWeight: 6,
+      });
+    });
+
+    it('ignores manual audits and audits with no group', () => {
+      const category = {
+        auditRefs: [
+          {weight: 1, result: {score: 1, scoreDisplayMode: 'binary'}, group: 'diagnostics'},
+          {weight: 1, result: {score: 1, scoreDisplayMode: 'binary'}},
+          {weight: 1, result: {score: 0, scoreDisplayMode: 'manual'}, group: 'diagnostics'},
+        ],
+      };
+      const fraction = Util.calculateCategoryFraction(category);
+      expect(fraction).toEqual({
+        numAudits: 1,
+        numPassed: 1,
+        numInformative: 0,
+        totalWeight: 1,
+      });
+    });
+
+    it('tracks informative audits separately', () => {
+      const category = {
+        auditRefs: [
+          {weight: 1, result: {score: 1, scoreDisplayMode: 'binary'}, group: 'diagnostics'},
+          {weight: 1, result: {score: 1, scoreDisplayMode: 'binary'}, group: 'diagnostics'},
+          {weight: 0, result: {score: 1, scoreDisplayMode: 'informative'}, group: 'diagnostics'},
+          {weight: 1, result: {score: 0, scoreDisplayMode: 'informative'}, group: 'diagnostics'},
+        ],
+      };
+      const fraction = Util.calculateCategoryFraction(category);
+      expect(fraction).toEqual({
+        numAudits: 2,
+        numPassed: 2,
+        numInformative: 2,
+        totalWeight: 2,
+      });
     });
   });
 });
