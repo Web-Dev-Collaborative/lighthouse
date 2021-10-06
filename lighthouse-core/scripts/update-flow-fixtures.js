@@ -46,8 +46,9 @@ async function waitForImagesToLoad(page) {
 
 (async () => {
   const browser = await puppeteer.launch({
-    headless: false,
     ignoreDefaultArgs: ['--enable-automation'],
+    executablePath: process.env.CHROME_PATH,
+    headless: false,
   });
 
   try {
