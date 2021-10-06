@@ -27,7 +27,7 @@ export class PwaCategoryRenderer extends CategoryRenderer {
    */
   render(category, groupDefinitions = {}) {
     const categoryElem = this.dom.createElement('div', 'lh-category');
-    this.createPermalinkSpan(categoryElem, category.id);
+    categoryElem.id = category.id;
     categoryElem.appendChild(this.renderCategoryHeader(category, groupDefinitions));
 
     const auditRefs = category.auditRefs;

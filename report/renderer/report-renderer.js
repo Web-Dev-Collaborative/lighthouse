@@ -170,7 +170,20 @@ export class ReportRenderer {
       // to link to the category.
       const gaugeWrapperEl = /** @type {HTMLAnchorElement} */ (
         categoryGauge.querySelector('a.lh-gauge__wrapper'));
-      if (gaugeWrapperEl) this._dom.safelySetHref(gaugeWrapperEl, `#${category.id}`);
+      if (gaugeWrapperEl) {
+        this._dom.safelySetHref(gaugeWrapperEl, `#${category.id}`);
+        // Handle clicks on scoregauge navigation without changing the page's URL.
+        gaugeWrapperEl.addEventListener('click', e => {
+          if (!gaugeWrapperEl.matches('[href^="#"]')) return;
+          const selector = gaugeWrapperEl.getAttribute('href');
+          const reportRoot = gaugeWrapperEl.closest('.lh-vars');
+          if (!selector || !reportRoot) return;
+          const destEl = this._dom.find(selector, reportRoot);
+          e.preventDefault();
+          destEl.scrollIntoView();
+        });
+      }
+
 
       if (Util.isPluginCategory(category.id)) {
         pluginGauges.push(categoryGauge);
@@ -245,8 +258,6 @@ export class ReportRenderer {
       stickyHeader.append(
         ...this._renderScoreGauges(report, categoryRenderer, specificCategoryRenderers));
       reportContainer.appendChild(stickyHeader);
-
-      this._setUpGaugeOnClick([scoreHeader, stickyHeader]);
     }
 
     const categories = reportSection.appendChild(this._dom.createElement('div', 'lh-categories'));
@@ -279,26 +290,5 @@ export class ReportRenderer {
     }
 
     return reportFragment;
-  }
-
-  /**
-   * Handle clicks on scoregauge navigation without changing the page's URL
-   * @param {Array<HTMLElement>} elems
-   */
-  _setUpGaugeOnClick(elems) {
-    elems.forEach(elem => {
-      elem.addEventListener('click', e => {
-        const target = /** @type {?Element} */ (e.target);
-        if (!target) return;
-        const el = /** @type {?HTMLElement} */ (target.closest('.lh-gauge__wrapper[href^="#"]'));
-        if (!el) return;
-        const selector = el.getAttribute('href');
-        const reportRoot = el.closest('.lh-vars');
-        if (!selector || !reportRoot) return;
-        const destEl = this._dom.find(selector, reportRoot);
-        e.preventDefault();
-        destEl.scrollIntoView();
-      });
-    });
   }
 }
