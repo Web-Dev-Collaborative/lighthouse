@@ -11,6 +11,7 @@
 const ByteEfficiencyAudit = require('./byte-efficiency-audit.js');
 const URL = require('../../lib/url-shim.js');
 const i18n = require('../../lib/i18n/i18n.js');
+const Audit = require('../audit.js');
 
 const UIStrings = {
   /** Imperative title of a Lighthouse audit that tells the user to serve images in newer and more efficient image formats in order to enhance the performance of a page. A non-modern image format was designed 20+ years ago. This is displayed in a list of audit titles that Lighthouse generates. */
@@ -103,6 +104,8 @@ class ModernImageFormats extends ByteEfficiencyAudit {
     const items = [];
     const warnings = [];
     for (const image of images) {
+      const imageElement = imageElementsByURL.get(image.url);
+
       if (image.failed) {
         warnings.push(`Unable to decode ${URL.getURLDisplayName(image.url)}`);
         continue;
@@ -120,7 +123,6 @@ class ModernImageFormats extends ByteEfficiencyAudit {
       let fromProtocol = true;
 
       if (typeof webpSize === 'undefined') {
-        const imageElement = imageElementsByURL.get(image.url);
         if (!imageElement) {
           warnings.push(`Unable to locate resource ${URL.getURLDisplayName(image.url)}`);
           continue;
@@ -155,6 +157,7 @@ class ModernImageFormats extends ByteEfficiencyAudit {
       const isCrossOrigin = !URL.originsMatch(pageURL, image.url);
 
       items.push({
+        node: imageElement ? Audit.makeNodeItem(imageElement.node) : undefined,
         url,
         fromProtocol,
         isCrossOrigin,
@@ -166,7 +169,7 @@ class ModernImageFormats extends ByteEfficiencyAudit {
 
     /** @type {LH.Audit.Details.Opportunity['headings']} */
     const headings = [
-      {key: 'url', valueType: 'thumbnail', label: ''},
+      {key: 'node', valueType: 'node', label: ''},
       {key: 'url', valueType: 'url', label: str_(i18n.UIStrings.columnURL)},
       {key: 'totalBytes', valueType: 'bytes', label: str_(i18n.UIStrings.columnResourceSize)},
       {key: 'wastedBytes', valueType: 'bytes', label: str_(i18n.UIStrings.columnWastedBytes)},

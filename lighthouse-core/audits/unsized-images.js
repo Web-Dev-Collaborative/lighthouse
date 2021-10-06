@@ -147,7 +147,7 @@ class UnsizedImages extends Audit {
 
     /** @type {LH.Audit.Details.Table['headings']} */
     const headings = [
-      {key: 'url', itemType: 'thumbnail', text: ''},
+      {key: 'node', itemType: 'node', text: ''},
       {key: 'url', itemType: 'url', text: str_(i18n.UIStrings.columnURL)},
     ];
 
