@@ -108,8 +108,9 @@ async function build(entryPath, distPath, opts = {minify: true}) {
   }
 
   // Don't include locales in DevTools.
+  // TODO: can remove when we have rollup brfs.
   if (isDevtools(entryPath)) {
-    const localeKeys = Object.keys(require('../lighthouse-core/lib/i18n/locales.js'));
+    const localeKeys = Object.keys(require('../shared/localization/locales.js'));
     /** @type {Record<string, {}>} */
     const localesShim = {};
     for (const key of localeKeys) localesShim[key] = {};

@@ -4,24 +4,14 @@
  * Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.
  */
 
-import fs from 'fs';
-import {dirname} from 'path';
-import {fileURLToPath} from 'url';
-
 import {render} from '@testing-library/preact';
 import {FunctionComponent} from 'preact';
 
+import {I18nProvider} from '../../src/i18n/i18n';
 import {SummaryHeader, SummaryFlowStep} from '../../src/summary/summary';
 import {FlowResultContext} from '../../src/util';
 import {ReportRendererProvider} from '../../src/wrappers/report-renderer';
-
-const flowResult: LH.FlowResult = JSON.parse(
-  fs.readFileSync(
-    // eslint-disable-next-line max-len
-    `${dirname(fileURLToPath(import.meta.url))}/../../../lighthouse-core/test/fixtures/fraggle-rock/reports/sample-lhrs.json`,
-    'utf-8'
-  )
-);
+import {flowResult} from '../sample-flow';
 
 let wrapper: FunctionComponent;
 
@@ -29,7 +19,9 @@ beforeEach(() => {
   wrapper = ({children}) => (
     <FlowResultContext.Provider value={flowResult}>
       <ReportRendererProvider>
-        {children}
+        <I18nProvider>
+          {children}
+        </I18nProvider>
       </ReportRendererProvider>
     </FlowResultContext.Provider>
   );
@@ -68,6 +60,7 @@ describe('SummaryFlowStep', () => {
 
     const links = root.getAllByRole('link') as HTMLAnchorElement[];
     expect(links.map(a => a.href)).toEqual([
+      'https://www.mikescerealshack.co/',
       'file:///Users/example/report.html/#index=0',
       'file:///Users/example/report.html/#index=0&anchor=performance',
       'file:///Users/example/report.html/#index=0&anchor=accessibility',
