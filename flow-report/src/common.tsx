@@ -54,9 +54,11 @@ const FlowStepAnimatedThumbnail: FunctionComponent<{
 
   return (
     <img
+      className="FlowStepThumbnail"
       data-testid="FlowStepAnimatedThumbnail"
       src={frames[frameIndex].data}
       style={{width, height}}
+      alt="Animated screenshots of a page tested by Lighthouse"
     />
   );
 };
