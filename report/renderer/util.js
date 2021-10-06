@@ -528,8 +528,10 @@ export class Util {
       // Don't count the audit if it's manual or isn't displayed.
       if (!auditRef.group || auditRef.result.scoreDisplayMode === 'manual') {
         continue;
-      } else if (auditRef.result.scoreDisplayMode === 'informative' && !auditPassed) {
-        ++numInformative;
+      } else if (auditRef.result.scoreDisplayMode === 'informative') {
+        if (!auditPassed) {
+          ++numInformative;
+        }
         continue;
       }
 
