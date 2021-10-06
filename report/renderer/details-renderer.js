@@ -501,16 +501,21 @@ export class DetailsRenderer {
    */
   renderNode(item) {
     const element = this._dom.createElement('span', 'lh-node');
-    if (item.nodeLabel) {
-      const nodeLabelEl = this._dom.createElement('div');
-      nodeLabelEl.textContent = item.nodeLabel;
-      element.appendChild(nodeLabelEl);
-    }
-    if (item.snippet) {
-      const snippetEl = this._dom.createElement('div');
-      snippetEl.classList.add('lh-node__snippet');
-      snippetEl.textContent = item.snippet;
-      element.appendChild(snippetEl);
+    const pathParts = item.path ? item.path.split(',') : undefined;
+    const tagName = pathParts ? pathParts[pathParts.length - 1] : undefined;
+
+    if (tagName !== 'IMG') {
+      if (item.nodeLabel) {
+        const nodeLabelEl = this._dom.createElement('div');
+        nodeLabelEl.textContent = item.nodeLabel;
+        element.appendChild(nodeLabelEl);
+      }
+      if (item.snippet) {
+        const snippetEl = this._dom.createElement('div');
+        snippetEl.classList.add('lh-node__snippet');
+        snippetEl.textContent = item.snippet;
+        element.appendChild(snippetEl);
+      }
     }
     if (item.selector) {
       element.title = item.selector;
