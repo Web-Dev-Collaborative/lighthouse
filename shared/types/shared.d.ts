@@ -4,28 +4,21 @@
  * Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.
  */
 
-import Result from './lhr';
+import {IcuMessage as IcuMessage_} from '../../types/lhr/i18n';
+import LHResult from '../../types/lhr/lhr';
+import FlowResult_ from '../../types/lhr/flow';
 
-declare module FlowResult {
-  interface Step {
-    lhr: Result;
-    name: string;
-  }
-
-  interface LhrRef {
-    value: Result;
-    index: number;
+import {Locale as Locale_} from '../../types/lhr/settings';
+ 
+declare global {
+  // Expose global types in LH namespace.
+  module LH {
+    export import Result = LHResult;
+    export import FlowResult = FlowResult_;
+    export type IcuMessage = IcuMessage_;
+    export type IcuMessagePaths = LHResult.IcuMessagePaths;
+    export type Locale = Locale_;
   }
 }
 
-/**
- * The full output of a Lighthouse flow. Includes a series of Lighthouse runs.
- */
-interface FlowResult {
-  /** Ordered list of flow steps, each corresponding to a navigation, timespan, or snapshot. */
-  steps: FlowResult.Step[];
-  /** Name given to this user flow. */
-  name: string;
-}
-
-export default FlowResult;
+export {};
