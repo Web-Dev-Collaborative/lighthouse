@@ -10,6 +10,8 @@ import {useEffect, useState} from 'preact/hooks';
 import {NavigationIcon, SnapshotIcon, TimespanIcon} from './icons';
 import {getFilmstripFrames, getScreenDimensions, getScreenshot} from './util';
 
+const ANIMATION_FRAME_DURATION_MS = 250;
+
 export const Separator: FunctionComponent = () => {
   return <div className="Separator" role="separator"></div>;
 };
@@ -49,7 +51,11 @@ const FlowStepAnimatedThumbnail: FunctionComponent<{
   const effectiveFrameIndex = frameIndex % frames.length;
 
   useEffect(() => {
-    const interval = setInterval(() => setFrameIndex(i => (i + 1) % frames.length), 250);
+    const interval = setInterval(
+      () => setFrameIndex(i => (i + 1) % frames.length),
+      ANIMATION_FRAME_DURATION_MS
+    );
+
     return () => clearInterval(interval);
   }, [frames.length]);
 
