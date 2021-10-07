@@ -37,14 +37,14 @@ export const SummaryTooltip: FunctionComponent<{
   const strings = useUIStrings();
   const {
     numPassed,
-    numAudits,
+    numPassableAudits,
     numInformative,
     totalWeight,
   } = Util.calculateCategoryFraction(category);
 
   const displayAsFraction = Util.shouldDisplayAsFraction(gatherMode);
   const rating = displayAsFraction ?
-    Util.calculateRating(numPassed / numAudits) :
+    Util.calculateRating(numPassed / numPassableAudits) :
     Util.calculateRating(category.score);
 
   return (
@@ -71,7 +71,7 @@ export const SummaryTooltip: FunctionComponent<{
       <div className="SummaryTooltip__fraction">
         {
           // TODO(FLOW-I18N): Placeholder format.
-          `${numPassed} audits passed / ${numAudits} audits run`
+          `${numPassed} audits passed / ${numPassableAudits} audits run`
         }
       </div>
       {

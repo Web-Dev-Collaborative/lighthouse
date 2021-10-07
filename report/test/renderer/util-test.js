@@ -406,13 +406,9 @@ describe('util helpers', () => {
           {weight: 1, result: {score: 0, scoreDisplayMode: 'binary'}, group: 'diagnostics'},
         ],
       };
-      const {numPassed, numAudits, totalWeight} = Util.calculateCategoryFraction(category);
-      expect(numPassed).toEqual(3);
-      expect(numAudits).toEqual(4);
-      expect(totalWeight).toEqual(6);
       const fraction = Util.calculateCategoryFraction(category);
       expect(fraction).toEqual({
-        numAudits: 4,
+        numPassableAudits: 4,
         numPassed: 3,
         numInformative: 0,
         totalWeight: 6,
@@ -429,7 +425,7 @@ describe('util helpers', () => {
       };
       const fraction = Util.calculateCategoryFraction(category);
       expect(fraction).toEqual({
-        numAudits: 1,
+        numPassableAudits: 1,
         numPassed: 1,
         numInformative: 0,
         totalWeight: 1,
@@ -447,7 +443,7 @@ describe('util helpers', () => {
       };
       const fraction = Util.calculateCategoryFraction(category);
       expect(fraction).toEqual({
-        numAudits: 2,
+        numPassableAudits: 2,
         numPassed: 2,
         numInformative: 2,
         totalWeight: 2,

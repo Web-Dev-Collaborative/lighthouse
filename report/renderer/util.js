@@ -518,7 +518,7 @@ export class Util {
    * @param {LH.ReportResult.Category} category
    */
   static calculateCategoryFraction(category) {
-    let numAudits = 0;
+    let numPassableAudits = 0;
     let numPassed = 0;
     let numInformative = 0;
     let totalWeight = 0;
@@ -535,11 +535,11 @@ export class Util {
         continue;
       }
 
-      ++numAudits;
+      ++numPassableAudits;
       totalWeight += auditRef.weight;
       if (auditPassed) numPassed++;
     }
-    return {numPassed, numAudits, numInformative, totalWeight};
+    return {numPassed, numPassableAudits, numInformative, totalWeight};
   }
 }
 
