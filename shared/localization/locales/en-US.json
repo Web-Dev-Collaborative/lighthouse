@@ -2391,7 +2391,10 @@
     "message": "User agent (network)"
   },
   "report/renderer/util.js | runtimeSingleLoad": {
-    "message": "Single load"
+    "message": "Single page load"
+  },
+  "report/renderer/util.js | runtimeSingleLoadTooltip": {
+    "message": "This data represents a single page load. Field data often summarizes many sessions."
   },
   "report/renderer/util.js | runtimeUnknown": {
     "message": "Unknown"

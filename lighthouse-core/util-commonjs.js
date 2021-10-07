@@ -629,8 +629,10 @@ Util.UIStrings = {
   runtimeDesktopEmulation: 'Emulated Desktop',
   /** Descriptive explanation for a runtime setting that is set to an unknown value. */
   runtimeUnknown: 'Unknown',
-  /** Descriptive explanation that this analysis run was from a single pageload of a browser (not a summary of hundreds of loads) */
-  runtimeSingleLoad: 'Single load',
+  /** Descriptive label that this analysis run was from a single pageload of a browser (not a summary of hundreds of loads) */
+  runtimeSingleLoad: 'Single page load',
+  /** Descriptive explanation that this analysis run was from a single pageload of a browser, whereas field data often summarizes hundreds+ of page loads */
+  runtimeSingleLoadTooltip: 'This data represents a single page load. Field data often summarizes many sessions.', // eslint-disable-line max-len
 
   /** Descriptive explanation for environment throttling that was provided by the runtime environment instead of provided by Lighthouse throttling. */
   throttlingProvided: 'Provided by environment',

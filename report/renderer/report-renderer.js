@@ -122,7 +122,8 @@ export class ReportRenderer {
             `\n${Util.i18n.strings.runtimeSettingsCPUThrottling}: ${envValues.cpuThrottling}` +
             (axeVersion ? `\n${Util.i18n.strings.runtimeSettingsAxeVersion}: ${axeVersion}` : ''),
       ],
-      ['samples-one', Util.i18n.strings.runtimeSingleLoad],
+      ['samples-one', Util.i18n.strings.runtimeSingleLoad,
+        Util.i18n.strings.runtimeSingleLoadTooltip],
 
       ['stopwatch', `${Util.i18n.formatSeconds(pageloadDurationMs)} of load`],
       ['networkspeed', `${envValues.summary}`,

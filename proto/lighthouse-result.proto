@@ -507,9 +507,13 @@ message I18n {
     // the selected metric.
     string show_relevant_audits = 48;
 
-    // Descriptive explanation that this analysis run was from a single pageload
+    // Descriptive label that this analysis run was from a single pageload
     // of a browser (not a summary of hundreds of loads)
     string runtime_single_load = 49;
+
+    // Descriptive explanation that this analysis run was from a single pageload
+    // of a browser, whereas field data often summarizes hundreds+ of page loads
+    string runtime_single_load_tooltip = 50;
 
 
   }

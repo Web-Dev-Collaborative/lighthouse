@@ -1826,7 +1826,7 @@
 }
 
 .lh-meta__item.lh-report-icon:hover::before {
-  opacity: unset;
+  opacity: 0.7;
 }
 
 .lh-meta__item .lh-tooltip {
