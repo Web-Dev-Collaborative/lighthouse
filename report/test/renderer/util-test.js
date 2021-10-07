@@ -416,13 +416,14 @@ describe('util helpers', () => {
       });
     });
 
-    it('ignores manual audits and performance audits with no group', () => {
+    it('ignores manual audits, N/A audits, and performance audits with no group', () => {
       const category = {
         id: 'performance',
         auditRefs: [
           {weight: 1, result: {score: 1, scoreDisplayMode: 'binary'}, group: 'diagnostics'},
           {weight: 1, result: {score: 1, scoreDisplayMode: 'binary'}},
           {weight: 1, result: {score: 0, scoreDisplayMode: 'manual'}, group: 'diagnostics'},
+          {weight: 1, result: {score: 0, scoreDisplayMode: 'notApplicable'}, group: 'diagnostics'},
         ],
       };
       const fraction = Util.calculateCategoryFraction(category);

@@ -71,7 +71,7 @@ export const SummaryTooltip: FunctionComponent<{
       <div className="SummaryTooltip__fraction">
         {
           // TODO(FLOW-I18N): Placeholder format.
-          `${numPassed} audits passed / ${numPassableAudits} audits run`
+          `${numPassed} audits passed / ${numPassableAudits} passable audits`
         }
       </div>
       {

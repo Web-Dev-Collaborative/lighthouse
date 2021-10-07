@@ -526,8 +526,10 @@ export class Util {
       const auditPassed = Util.showAsPassed(auditRef.result);
       const notDisplayed = !auditRef.group && category.id === 'performance';
 
-      // Don't count the audit if it's manual or isn't displayed.
-      if (notDisplayed || auditRef.result.scoreDisplayMode === 'manual') {
+      // Don't count the audit if it's manual, N/A, or isn't displayed.
+      if (notDisplayed
+        || auditRef.result.scoreDisplayMode === 'manual'
+        || auditRef.result.scoreDisplayMode === 'notApplicable') {
         continue;
       } else if (auditRef.result.scoreDisplayMode === 'informative') {
         if (!auditPassed) {
