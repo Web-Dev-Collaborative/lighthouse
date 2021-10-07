@@ -87,10 +87,20 @@ function createAxeRuleResultArtifact(result) {
     // @ts-expect-error - getNodeDetails put into scope via stringification
     const nodeDetails = getNodeDetails(/** @type {HTMLElement} */ (element));
 
+    const relatedNodeDetails = [];
+    for (const checkResult of [...node.any, ...node.all, ...node.none]) {
+      for (const relatedNode of checkResult.relatedNodes || []) {
+        // @ts-expect-error - getNodeDetails put into scope via stringification
+        const nodeDetails = getNodeDetails(/** @type {HTMLElement} */ (relatedNode.element));
+        relatedNodeDetails.push(nodeDetails);
+      }
+    }
+
     return {
       target,
       failureSummary,
       node: nodeDetails,
+      relatedNodes: relatedNodeDetails,
     };
   });
 
