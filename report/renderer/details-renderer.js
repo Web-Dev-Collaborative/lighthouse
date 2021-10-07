@@ -495,7 +495,14 @@ export class DetailsRenderer {
     const pathParts = item.path ? item.path.split(',') : undefined;
     const tagName = pathParts ? pathParts[pathParts.length - 1] : undefined;
 
-    if (tagName !== 'IMG') {
+    // We use `node` to show images in the report withhout hotlinking. In that case,
+    // we don't want to show the html alongside the node thumbnail, as that information
+    // is likely not useful and just adds noise.
+    const hasVisibleBoundingRect = item.boundingRect &&
+      item.boundingRect.width > 1 && item.boundingRect.height > 1;
+    const shouldHideSnippetAndLabel = tagName === 'IMG' && hasVisibleBoundingRect;
+
+    if (!shouldHideSnippetAndLabel) {
       if (item.nodeLabel) {
         const nodeLabelEl = this._dom.createElement('div');
         nodeLabelEl.textContent = item.nodeLabel;
