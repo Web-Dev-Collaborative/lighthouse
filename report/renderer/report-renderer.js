@@ -104,10 +104,11 @@ export class ReportRenderer {
     const chromeVer = Array.isArray(match)
       ? match[1].replace('/', ' ').replace('Chrome', 'Chromium')
       : 'Chromium';
-    const pageloadDurationMs = Math.max(
-      report.timing.entries.find(e => e.name === 'lh:gather:loadPage-defaultPass')?.duration || 0,
-      report.audits?.interactive?.numericValue || 0
-    );
+    const entry = report.timing.entries.find(e => e.name === 'lh:gather:loadPage-defaultPass');
+    const loadPage = entry ? entry.duration : 0;
+    const tti = report.audits && report.audits.interactive &&
+      report.audits.interactive.numericValue || 0;
+    const pageloadDurationMs = Math.max(loadPage, tti);
     const channel = report.configSettings.channel;
     const benchmarkIndex = report.environment.benchmarkIndex.toFixed(0);
     const axeVersion = report.environment.credits['axe-core'];
