@@ -37,4 +37,28 @@ export const UIStrings = {
   ratingFail: 'Poor',
   /** Rating indicating that a report category rating could not be calculated because of an error. */
   ratingError: 'Error',
+  /**
+   * @description Label indicating the number of Lighthouse reports that evaluate a web page as it loads, but before the user interacts with it.
+   * @example {2} numNavigation
+   */
+  navigationReportCount: `{numNavigation, plural,
+    =1 {{numNavigation} navigation report}
+    other {{numNavigation} navigation reports}
+  }`,
+  /**
+   * @description Label indicating the number of Lighthouse reports that evaluate a web page over a period of time where the user could have interacted with the page.
+   * @example {2} numTimespan
+   */
+  timespanReportCount: `{numTimespan, plural,
+    =1 {{numTimespan} timespan report}
+    other {{numTimespan} timespan reports}
+  }`,
+  /**
+   * @description Label indicating the number of Lighthouse reports that evaluate a web page at a single point in time.
+   * @example {2} numSnapshot
+   */
+  snapshotReportCount: `{numSnapshot, plural,
+    =1 {{numSnapshot} snapshot report}
+    other {{numSnapshot} snapshot reports}
+  }`,
 };

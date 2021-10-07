@@ -11,7 +11,7 @@ import {FlowSegment, FlowStepThumbnail, Separator} from '../common';
 import {getModeDescription, useFlowResult} from '../util';
 import {Util} from '../../../report/renderer/util';
 import {SummaryCategory} from './category';
-import {useUIStrings} from '../i18n/i18n';
+import {useStringFormatter, useUIStrings} from '../i18n/i18n';
 
 const DISPLAYED_CATEGORIES = ['performance', 'accessibility', 'best-practices', 'seo'];
 const THUMBNAIL_WIDTH = 50;
@@ -107,6 +107,7 @@ const SummaryFlow: FunctionComponent = () => {
 export const SummaryHeader: FunctionComponent = () => {
   const flowResult = useFlowResult();
   const strings = useUIStrings();
+  const str_ = useStringFormatter();
 
   let numNavigation = 0;
   let numTimespan = 0;
@@ -126,9 +127,9 @@ export const SummaryHeader: FunctionComponent = () => {
   }
 
   const subtitleCounts = [];
-  if (numNavigation) subtitleCounts.push(`${numNavigation} navigation reports`);
-  if (numTimespan) subtitleCounts.push(`${numTimespan} timespan reports`);
-  if (numSnapshot) subtitleCounts.push(`${numSnapshot} snapshot reports`);
+  if (numNavigation) subtitleCounts.push(str_(strings.navigationReportCount, {numNavigation}));
+  if (numTimespan) subtitleCounts.push(str_(strings.timespanReportCount, {numTimespan}));
+  if (numSnapshot) subtitleCounts.push(str_(strings.snapshotReportCount, {numSnapshot}));
   const subtitle = subtitleCounts.join(' · ');
 
   return (
