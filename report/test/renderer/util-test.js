@@ -399,6 +399,7 @@ describe('util helpers', () => {
   describe('#calculateCategoryFraction', () => {
     it('returns passed audits and total audits', () => {
       const category = {
+        id: 'performance',
         auditRefs: [
           {weight: 3, result: {score: 1, scoreDisplayMode: 'binary'}, group: 'diagnostics'},
           {weight: 2, result: {score: 1, scoreDisplayMode: 'binary'}, group: 'diagnostics'},
@@ -415,8 +416,9 @@ describe('util helpers', () => {
       });
     });
 
-    it('ignores manual audits and audits with no group', () => {
+    it('ignores manual audits and performance audits with no group', () => {
       const category = {
+        id: 'performance',
         auditRefs: [
           {weight: 1, result: {score: 1, scoreDisplayMode: 'binary'}, group: 'diagnostics'},
           {weight: 1, result: {score: 1, scoreDisplayMode: 'binary'}},
@@ -432,8 +434,27 @@ describe('util helpers', () => {
       });
     });
 
+    it('does not ignore audits with no group in non-performance category', () => {
+      const category = {
+        id: 'seo',
+        auditRefs: [
+          {weight: 1, result: {score: 1, scoreDisplayMode: 'binary'}, group: 'diagnostics'},
+          {weight: 1, result: {score: 1, scoreDisplayMode: 'binary'}},
+          {weight: 1, result: {score: 0, scoreDisplayMode: 'manual'}, group: 'diagnostics'},
+        ],
+      };
+      const fraction = Util.calculateCategoryFraction(category);
+      expect(fraction).toEqual({
+        numPassableAudits: 2,
+        numPassed: 2,
+        numInformative: 0,
+        totalWeight: 2,
+      });
+    });
+
     it('tracks informative audits separately', () => {
       const category = {
+        id: 'performance',
         auditRefs: [
           {weight: 1, result: {score: 1, scoreDisplayMode: 'binary'}, group: 'diagnostics'},
           {weight: 1, result: {score: 1, scoreDisplayMode: 'binary'}, group: 'diagnostics'},
