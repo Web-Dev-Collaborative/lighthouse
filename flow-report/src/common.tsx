@@ -48,6 +48,7 @@ const FlowStepAnimatedThumbnail: FunctionComponent<{
   height: number,
 }> = ({frames, width, height}) => {
   const [frameIndex, setFrameIndex] = useState(0);
+  // Handle a frame array of a different length being set.
   const effectiveFrameIndex = frameIndex % frames.length;
 
   useEffect(() => {
