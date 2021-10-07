@@ -175,667 +175,778 @@
       "startTime": 0,
       "name": "lh:init:config",
       "duration": 1,
-      "entryType": "measure"
+      "entryType": "measure",
+      "gather": true
     },
     {
       "startTime": 0,
       "name": "lh:config:requireGatherers",
       "duration": 1,
-      "entryType": "measure"
+      "entryType": "measure",
+      "gather": true
     },
     {
       "startTime": 0,
       "name": "lh:config:requireAudits",
       "duration": 1,
-      "entryType": "measure"
+      "entryType": "measure",
+      "gather": true
     },
     {
       "startTime": 0,
       "name": "lh:init:connect",
       "duration": 1,
-      "entryType": "measure"
+      "entryType": "measure",
+      "gather": true
     },
     {
       "startTime": 0,
       "name": "lh:gather:loadBlank",
       "duration": 1,
-      "entryType": "measure"
+      "entryType": "measure",
+      "gather": true
     },
     {
       "startTime": 0,
       "name": "lh:gather:getVersion",
       "duration": 1,
-      "entryType": "measure"
+      "entryType": "measure",
+      "gather": true
     },
     {
       "startTime": 0,
       "name": "lh:gather:getBenchmarkIndex",
       "duration": 1,
-      "entryType": "measure"
+      "entryType": "measure",
+      "gather": true
     },
     {
       "startTime": 0,
       "name": "lh:gather:setupDriver",
       "duration": 1,
-      "entryType": "measure"
+      "entryType": "measure",
+      "gather": true
     },
     {
       "startTime": 0,
       "name": "lh:gather:runPass-defaultPass",
       "duration": 1,
-      "entryType": "measure"
+      "entryType": "measure",
+      "gather": true
     },
     {
       "startTime": 0,
       "name": "lh:gather:loadBlank",
       "duration": 1,
-      "entryType": "measure"
+      "entryType": "measure",
+      "gather": true
     },
     {
       "startTime": 0,
       "name": "lh:storage:clearBrowserCaches",
       "duration": 1,
-      "entryType": "measure"
+      "entryType": "measure",
+      "gather": true
     },
     {
       "startTime": 0,
       "name": "lh:gather:prepareNetworkForNavigation",
       "duration": 1,
-      "entryType": "measure"
+      "entryType": "measure",
+      "gather": true
     },
     {
       "startTime": 0,
       "name": "lh:gather:beforePass",
       "duration": 1,
-      "entryType": "measure"
+      "entryType": "measure",
+      "gather": true
     },
     {
       "startTime": 0,
       "name": "lh:gather:beforePass:CSSUsage",
       "duration": 1,
-      "entryType": "measure"
+      "entryType": "measure",
+      "gather": true
     },
     {
       "startTime": 0,
       "name": "lh:gather:beforePass:JsUsage",
       "duration": 1,
-      "entryType": "measure"
+      "entryType": "measure",
+      "gather": true
     },
     {
       "startTime": 0,
       "name": "lh:gather:beforePass:ViewportDimensions",
       "duration": 1,
-      "entryType": "measure"
+      "entryType": "measure",
+      "gather": true
     },
     {
       "startTime": 0,
       "name": "lh:gather:beforePass:ConsoleMessages",
       "duration": 1,
-      "entryType": "measure"
+      "entryType": "measure",
+      "gather": true
     },
     {
       "startTime": 0,
       "name": "lh:gather:beforePass:AnchorElements",
       "duration": 1,
-      "entryType": "measure"
+      "entryType": "measure",
+      "gather": true
     },
     {
       "startTime": 0,
       "name": "lh:gather:beforePass:ImageElements",
       "duration": 1,
-      "entryType": "measure"
+      "entryType": "measure",
+      "gather": true
     },
     {
       "startTime": 0,
       "name": "lh:gather:beforePass:LinkElements",
       "duration": 1,
-      "entryType": "measure"
+      "entryType": "measure",
+      "gather": true
     },
     {
       "startTime": 0,
       "name": "lh:gather:beforePass:MetaElements",
       "duration": 1,
-      "entryType": "measure"
+      "entryType": "measure",
+      "gather": true
     },
     {
       "startTime": 0,
       "name": "lh:gather:beforePass:ScriptElements",
       "duration": 1,
-      "entryType": "measure"
+      "entryType": "measure",
+      "gather": true
     },
     {
       "startTime": 0,
       "name": "lh:gather:beforePass:IFrameElements",
       "duration": 1,
-      "entryType": "measure"
+      "entryType": "measure",
+      "gather": true
     },
     {
       "startTime": 0,
       "name": "lh:gather:beforePass:FormElements",
       "duration": 1,
-      "entryType": "measure"
+      "entryType": "measure",
+      "gather": true
     },
     {
       "startTime": 0,
       "name": "lh:gather:beforePass:MainDocumentContent",
       "duration": 1,
-      "entryType": "measure"
+      "entryType": "measure",
+      "gather": true
     },
     {
       "startTime": 0,
       "name": "lh:gather:beforePass:GatherContext",
       "duration": 1,
-      "entryType": "measure"
+      "entryType": "measure",
+      "gather": true
     },
     {
       "startTime": 0,
       "name": "lh:gather:beforePass:GlobalListeners",
       "duration": 1,
-      "entryType": "measure"
+      "entryType": "measure",
+      "gather": true
     },
     {
       "startTime": 0,
       "name": "lh:gather:beforePass:AppCacheManifest",
       "duration": 1,
-      "entryType": "measure"
+      "entryType": "measure",
+      "gather": true
     },
     {
       "startTime": 0,
       "name": "lh:gather:beforePass:Doctype",
       "duration": 1,
-      "entryType": "measure"
+      "entryType": "measure",
+      "gather": true
     },
     {
       "startTime": 0,
       "name": "lh:gather:beforePass:DOMStats",
       "duration": 1,
-      "entryType": "measure"
+      "entryType": "measure",
+      "gather": true
     },
     {
       "startTime": 0,
       "name": "lh:gather:beforePass:OptimizedImages",
       "duration": 1,
-      "entryType": "measure"
+      "entryType": "measure",
+      "gather": true
     },
     {
       "startTime": 0,
       "name": "lh:gather:beforePass:PasswordInputsWithPreventedPaste",
       "duration": 1,
-      "entryType": "measure"
+      "entryType": "measure",
+      "gather": true
     },
     {
       "startTime": 0,
       "name": "lh:gather:beforePass:ResponseCompression",
       "duration": 1,
-      "entryType": "measure"
+      "entryType": "measure",
+      "gather": true
     },
     {
       "startTime": 0,
       "name": "lh:gather:beforePass:TagsBlockingFirstPaint",
       "duration": 1,
-      "entryType": "measure"
+      "entryType": "measure",
+      "gather": true
     },
     {
       "startTime": 0,
       "name": "lh:gather:beforePass:FontSize",
       "duration": 1,
-      "entryType": "measure"
+      "entryType": "measure",
+      "gather": true
     },
     {
       "startTime": 0,
       "name": "lh:gather:beforePass:EmbeddedContent",
       "duration": 1,
-      "entryType": "measure"
+      "entryType": "measure",
+      "gather": true
     },
     {
       "startTime": 0,
       "name": "lh:gather:beforePass:RobotsTxt",
       "duration": 1,
-      "entryType": "measure"
+      "entryType": "measure",
+      "gather": true
     },
     {
       "startTime": 0,
       "name": "lh:gather:beforePass:TapTargets",
       "duration": 1,
-      "entryType": "measure"
+      "entryType": "measure",
+      "gather": true
     },
     {
       "startTime": 0,
       "name": "lh:gather:beforePass:Accessibility",
       "duration": 1,
-      "entryType": "measure"
+      "entryType": "measure",
+      "gather": true
     },
     {
       "startTime": 0,
       "name": "lh:gather:beforePass:TraceElements",
       "duration": 1,
-      "entryType": "measure"
+      "entryType": "measure",
+      "gather": true
     },
     {
       "startTime": 0,
       "name": "lh:gather:beforePass:InspectorIssues",
       "duration": 1,
-      "entryType": "measure"
+      "entryType": "measure",
+      "gather": true
     },
     {
       "startTime": 0,
       "name": "lh:gather:beforePass:SourceMaps",
       "duration": 1,
-      "entryType": "measure"
+      "entryType": "measure",
+      "gather": true
     },
     {
       "startTime": 0,
       "name": "lh:gather:beforePass:FullPageScreenshot",
       "duration": 1,
-      "entryType": "measure"
+      "entryType": "measure",
+      "gather": true
     },
     {
       "startTime": 0,
       "name": "lh:gather:beginRecording",
       "duration": 1,
-      "entryType": "measure"
+      "entryType": "measure",
+      "gather": true
     },
     {
       "startTime": 0,
       "name": "lh:gather:loadPage-defaultPass",
       "duration": 1,
-      "entryType": "measure"
+      "entryType": "measure",
+      "gather": true
     },
     {
       "startTime": 0,
       "name": "lh:gather:pass",
       "duration": 1,
-      "entryType": "measure"
+      "entryType": "measure",
+      "gather": true
     },
     {
       "startTime": 0,
       "name": "lh:gather:getTrace",
       "duration": 1,
-      "entryType": "measure"
+      "entryType": "measure",
+      "gather": true
     },
     {
       "startTime": 0,
       "name": "lh:gather:getDevtoolsLog",
       "duration": 1,
-      "entryType": "measure"
+      "entryType": "measure",
+      "gather": true
     },
     {
       "startTime": 0,
       "name": "lh:computed:NetworkRecords",
       "duration": 1,
-      "entryType": "measure"
+      "entryType": "measure",
+      "gather": true
     },
     {
       "startTime": 0,
       "name": "lh:gather:afterPass",
       "duration": 1,
-      "entryType": "measure"
+      "entryType": "measure",
+      "gather": true
     },
     {
       "startTime": 0,
       "name": "lh:gather:afterPass:CSSUsage",
       "duration": 1,
-      "entryType": "measure"
+      "entryType": "measure",
+      "gather": true
     },
     {
       "startTime": 0,
       "name": "lh:gather:afterPass:JsUsage",
       "duration": 1,
-      "entryType": "measure"
+      "entryType": "measure",
+      "gather": true
     },
     {
       "startTime": 0,
       "name": "lh:gather:afterPass:ViewportDimensions",
       "duration": 1,
-      "entryType": "measure"
+      "entryType": "measure",
+      "gather": true
     },
     {
       "startTime": 0,
       "name": "lh:gather:afterPass:ConsoleMessages",
       "duration": 1,
-      "entryType": "measure"
+      "entryType": "measure",
+      "gather": true
     },
     {
       "startTime": 0,
       "name": "lh:gather:afterPass:AnchorElements",
       "duration": 1,
-      "entryType": "measure"
+      "entryType": "measure",
+      "gather": true
     },
     {
       "startTime": 0,
       "name": "lh:gather:afterPass:ImageElements",
       "duration": 1,
-      "entryType": "measure"
+      "entryType": "measure",
+      "gather": true
     },
     {
       "startTime": 0,
       "name": "lh:gather:afterPass:LinkElements",
       "duration": 1,
-      "entryType": "measure"
+      "entryType": "measure",
+      "gather": true
     },
     {
       "startTime": 0,
       "name": "lh:gather:afterPass:MetaElements",
       "duration": 1,
-      "entryType": "measure"
+      "entryType": "measure",
+      "gather": true
     },
     {
       "startTime": 0,
       "name": "lh:gather:afterPass:ScriptElements",
       "duration": 1,
-      "entryType": "measure"
+      "entryType": "measure",
+      "gather": true
     },
     {
       "startTime": 0,
       "name": "lh:gather:afterPass:IFrameElements",
       "duration": 1,
-      "entryType": "measure"
+      "entryType": "measure",
+      "gather": true
     },
     {
       "startTime": 0,
       "name": "lh:gather:afterPass:FormElements",
       "duration": 1,
-      "entryType": "measure"
+      "entryType": "measure",
+      "gather": true
     },
     {
       "startTime": 0,
       "name": "lh:gather:afterPass:MainDocumentContent",
       "duration": 1,
-      "entryType": "measure"
+      "entryType": "measure",
+      "gather": true
     },
     {
       "startTime": 0,
       "name": "lh:gather:afterPass:GatherContext",
       "duration": 1,
-      "entryType": "measure"
+      "entryType": "measure",
+      "gather": true
     },
     {
       "startTime": 0,
       "name": "lh:gather:afterPass:GlobalListeners",
       "duration": 1,
-      "entryType": "measure"
+      "entryType": "measure",
+      "gather": true
     },
     {
       "startTime": 0,
       "name": "lh:gather:afterPass:AppCacheManifest",
       "duration": 1,
-      "entryType": "measure"
+      "entryType": "measure",
+      "gather": true
     },
     {
       "startTime": 0,
       "name": "lh:gather:afterPass:Doctype",
       "duration": 1,
-      "entryType": "measure"
+      "entryType": "measure",
+      "gather": true
     },
     {
       "startTime": 0,
       "name": "lh:gather:afterPass:DOMStats",
       "duration": 1,
-      "entryType": "measure"
+      "entryType": "measure",
+      "gather": true
     },
     {
       "startTime": 0,
       "name": "lh:gather:afterPass:OptimizedImages",
       "duration": 1,
-      "entryType": "measure"
+      "entryType": "measure",
+      "gather": true
     },
     {
       "startTime": 0,
       "name": "lh:gather:afterPass:PasswordInputsWithPreventedPaste",
       "duration": 1,
-      "entryType": "measure"
+      "entryType": "measure",
+      "gather": true
     },
     {
       "startTime": 0,
       "name": "lh:gather:afterPass:ResponseCompression",
       "duration": 1,
-      "entryType": "measure"
+      "entryType": "measure",
+      "gather": true
     },
     {
       "startTime": 0,
       "name": "lh:gather:afterPass:TagsBlockingFirstPaint",
       "duration": 1,
-      "entryType": "measure"
+      "entryType": "measure",
+      "gather": true
     },
     {
       "startTime": 0,
       "name": "lh:gather:afterPass:FontSize",
       "duration": 1,
-      "entryType": "measure"
+      "entryType": "measure",
+      "gather": true
     },
     {
       "startTime": 0,
       "name": "lh:gather:afterPass:EmbeddedContent",
       "duration": 1,
-      "entryType": "measure"
+      "entryType": "measure",
+      "gather": true
     },
     {
       "startTime": 0,
       "name": "lh:gather:afterPass:RobotsTxt",
       "duration": 1,
-      "entryType": "measure"
+      "entryType": "measure",
+      "gather": true
     },
     {
       "startTime": 0,
       "name": "lh:gather:getVersion",
       "duration": 1,
-      "entryType": "measure"
+      "entryType": "measure",
+      "gather": true
     },
     {
       "startTime": 0,
       "name": "lh:gather:getVersion",
       "duration": 1,
-      "entryType": "measure"
+      "entryType": "measure",
+      "gather": true
     },
     {
       "startTime": 0,
       "name": "lh:gather:afterPass:TapTargets",
       "duration": 1,
-      "entryType": "measure"
+      "entryType": "measure",
+      "gather": true
     },
     {
       "startTime": 0,
       "name": "lh:gather:afterPass:Accessibility",
       "duration": 1,
-      "entryType": "measure"
+      "entryType": "measure",
+      "gather": true
     },
     {
       "startTime": 0,
       "name": "lh:gather:afterPass:TraceElements",
       "duration": 1,
-      "entryType": "measure"
+      "entryType": "measure",
+      "gather": true
     },
     {
       "startTime": 0,
       "name": "lh:computed:ProcessedTrace",
       "duration": 1,
-      "entryType": "measure"
+      "entryType": "measure",
+      "gather": true
     },
     {
       "startTime": 0,
       "name": "lh:computed:ProcessedNavigation",
       "duration": 1,
-      "entryType": "measure"
+      "entryType": "measure",
+      "gather": true
     },
     {
       "startTime": 0,
       "name": "lh:gather:afterPass:InspectorIssues",
       "duration": 1,
-      "entryType": "measure"
+      "entryType": "measure",
+      "gather": true
     },
     {
       "startTime": 0,
       "name": "lh:gather:afterPass:SourceMaps",
       "duration": 1,
-      "entryType": "measure"
+      "entryType": "measure",
+      "gather": true
     },
     {
       "startTime": 0,
       "name": "lh:gather:afterPass:FullPageScreenshot",
       "duration": 1,
-      "entryType": "measure"
+      "entryType": "measure",
+      "gather": true
     },
     {
       "startTime": 0,
       "name": "lh:gather:populateBaseArtifacts",
       "duration": 1,
-      "entryType": "measure"
+      "entryType": "measure",
+      "gather": true
     },
     {
       "startTime": 0,
       "name": "lh:gather:collectStacks",
       "duration": 1,
-      "entryType": "measure"
+      "entryType": "measure",
+      "gather": true
     },
     {
       "startTime": 0,
       "name": "lh:gather:runPass-offlinePass",
       "duration": 1,
-      "entryType": "measure"
+      "entryType": "measure",
+      "gather": true
     },
     {
       "startTime": 0,
       "name": "lh:gather:loadBlank",
       "duration": 1,
-      "entryType": "measure"
+      "entryType": "measure",
+      "gather": true
     },
     {
       "startTime": 0,
       "name": "lh:gather:prepareNetworkForNavigation",
       "duration": 1,
-      "entryType": "measure"
+      "entryType": "measure",
+      "gather": true
     },
     {
       "startTime": 0,
       "name": "lh:gather:beforePass",
       "duration": 1,
-      "entryType": "measure"
+      "entryType": "measure",
+      "gather": true
     },
     {
       "startTime": 0,
       "name": "lh:gather:beforePass:ServiceWorker",
       "duration": 1,
-      "entryType": "measure"
+      "entryType": "measure",
+      "gather": true
     },
     {
       "startTime": 0,
       "name": "lh:gather:beginRecording",
       "duration": 1,
-      "entryType": "measure"
+      "entryType": "measure",
+      "gather": true
     },
     {
       "startTime": 0,
       "name": "lh:gather:loadPage-offlinePass",
       "duration": 1,
-      "entryType": "measure"
+      "entryType": "measure",
+      "gather": true
     },
     {
       "startTime": 0,
       "name": "lh:gather:pass",
       "duration": 1,
-      "entryType": "measure"
+      "entryType": "measure",
+      "gather": true
     },
     {
       "startTime": 0,
       "name": "lh:gather:getDevtoolsLog",
       "duration": 1,
-      "entryType": "measure"
+      "entryType": "measure",
+      "gather": true
     },
     {
       "startTime": 0,
       "name": "lh:computed:NetworkRecords",
       "duration": 1,
-      "entryType": "measure"
+      "entryType": "measure",
+      "gather": true
     },
     {
       "startTime": 0,
       "name": "lh:gather:afterPass",
       "duration": 1,
-      "entryType": "measure"
+      "entryType": "measure",
+      "gather": true
     },
     {
       "startTime": 0,
       "name": "lh:gather:afterPass:ServiceWorker",
       "duration": 1,
-      "entryType": "measure"
+      "entryType": "measure",
+      "gather": true
     },
     {
       "startTime": 0,
       "name": "lh:gather:runPass-redirectPass",
       "duration": 1,
-      "entryType": "measure"
+      "entryType": "measure",
+      "gather": true
     },
     {
       "startTime": 0,
       "name": "lh:gather:loadBlank",
       "duration": 1,
-      "entryType": "measure"
+      "entryType": "measure",
+      "gather": true
     },
     {
       "startTime": 0,
       "name": "lh:gather:prepareNetworkForNavigation",
       "duration": 1,
-      "entryType": "measure"
+      "entryType": "measure",
+      "gather": true
     },
     {
       "startTime": 0,
       "name": "lh:gather:beforePass",
       "duration": 1,
-      "entryType": "measure"
+      "entryType": "measure",
+      "gather": true
     },
     {
       "startTime": 0,
       "name": "lh:gather:beforePass:HTTPRedirect",
       "duration": 1,
-      "entryType": "measure"
+      "entryType": "measure",
+      "gather": true
     },
     {
       "startTime": 0,
       "name": "lh:gather:beginRecording",
       "duration": 1,
-      "entryType": "measure"
+      "entryType": "measure",
+      "gather": true
     },
     {
       "startTime": 0,
       "name": "lh:gather:loadPage-redirectPass",
       "duration": 1,
-      "entryType": "measure"
+      "entryType": "measure",
+      "gather": true
     },
     {
       "startTime": 0,
       "name": "lh:gather:pass",
       "duration": 1,
-      "entryType": "measure"
+      "entryType": "measure",
+      "gather": true
     },
     {
       "startTime": 0,
       "name": "lh:gather:getDevtoolsLog",
       "duration": 1,
-      "entryType": "measure"
+      "entryType": "measure",
+      "gather": true
     },
     {
       "startTime": 0,
       "name": "lh:computed:NetworkRecords",
       "duration": 1,
-      "entryType": "measure"
+      "entryType": "measure",
+      "gather": true
     },
     {
       "startTime": 0,
       "name": "lh:gather:afterPass",
       "duration": 1,
-      "entryType": "measure"
+      "entryType": "measure",
+      "gather": true
     },
     {
       "startTime": 0,
       "name": "lh:gather:afterPass:HTTPRedirect",
       "duration": 1,
-      "entryType": "measure"
+      "entryType": "measure",
+      "gather": true
     },
     {
       "startTime": 0,
       "name": "lh:gather:disconnect",
       "duration": 1,
-      "entryType": "measure"
+      "entryType": "measure",
+      "gather": true
     }
   ],
   "PageLoadError": null,
@@ -11615,7 +11726,6 @@
               "html"
             ],
             "failureSummary": "Fix any of the following:\n  The <html> element does not have a lang attribute",
-            "relatedNodes": [],
             "node": {
               "lhId": "5-48-HTML",
               "devtoolsNodePath": "3,HTML",
@@ -11630,7 +11740,8 @@
               },
               "snippet": "<html manifest=\"clock.appcache\">",
               "nodeLabel": "html"
-            }
+            },
+            "relatedNodes": []
           }
         ]
       },
@@ -11651,7 +11762,6 @@
               "img[src=\"lighthouse-480x318\\.jpg\\?iar1\"]"
             ],
             "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\"",
-            "relatedNodes": [],
             "node": {
               "lhId": "5-49-IMG",
               "devtoolsNodePath": "3,HTML,1,BODY,14,IMG",
@@ -11666,14 +11776,14 @@
               },
               "snippet": "<img src=\"lighthouse-480x318.jpg?iar1\" width=\"120\" height=\"15\">",
               "nodeLabel": "body > img"
-            }
+            },
+            "relatedNodes": []
           },
           {
             "target": [
               "img[loading=\"lazy\"]"
             ],
             "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\"",
-            "relatedNodes": [],
             "node": {
               "lhId": "5-50-IMG",
               "devtoolsNodePath": "3,HTML,1,BODY,17,IMG",
@@ -11688,14 +11798,14 @@
               },
               "snippet": "<img loading=\"lazy\" src=\"lighthouse-480x318.jpg?iar2\" width=\"120\" height=\"80\">",
               "nodeLabel": "body > img"
-            }
+            },
+            "relatedNodes": []
           },
           {
             "target": [
               "img[src=\"lighthouse-480x318\\.jpg\\?isr1\"]"
             ],
             "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\"",
-            "relatedNodes": [],
             "node": {
               "lhId": "5-51-IMG",
               "devtoolsNodePath": "3,HTML,1,BODY,19,IMG",
@@ -11710,14 +11820,14 @@
               },
               "snippet": "<img src=\"lighthouse-480x318.jpg?isr1\" width=\"360\" height=\"240\" style=\"position: absolute;\">",
               "nodeLabel": "body > img"
-            }
+            },
+            "relatedNodes": []
           },
           {
             "target": [
               "img[src=\"lighthouse-480x318\\.jpg\\?isr2\"]"
             ],
             "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\"",
-            "relatedNodes": [],
             "node": {
               "lhId": "5-52-IMG",
               "devtoolsNodePath": "3,HTML,1,BODY,21,IMG",
@@ -11732,14 +11842,14 @@
               },
               "snippet": "<img src=\"lighthouse-480x318.jpg?isr2\" width=\"120\" height=\"80\" style=\"position: absolute;\">",
               "nodeLabel": "body > img"
-            }
+            },
+            "relatedNodes": []
           },
           {
             "target": [
               "img[src=\"lighthouse-480x318\\.jpg\\?isr3\"]"
             ],
             "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\"",
-            "relatedNodes": [],
             "node": {
               "lhId": "5-53-IMG",
               "devtoolsNodePath": "3,HTML,1,BODY,23,IMG",
@@ -11754,14 +11864,14 @@
               },
               "snippet": "<img src=\"lighthouse-480x318.jpg?isr3\" width=\"360\" height=\"240\" style=\"image-rendering: pixelated; position: absolute;\">",
               "nodeLabel": "body > img"
-            }
+            },
+            "relatedNodes": []
           },
           {
             "target": [
               "img[src=\"lighthouse-480x318\\.jpg\\?isr4\"]"
             ],
             "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\"",
-            "relatedNodes": [],
             "node": {
               "lhId": "5-54-IMG",
               "devtoolsNodePath": "3,HTML,1,BODY,25,IMG",
@@ -11776,14 +11886,14 @@
               },
               "snippet": "<img src=\"http://localhost:10200/dobetterweb/lighthouse-480x318.jpg\" srcset=\"lighthouse-480x318.jpg 2x\" width=\"360\" height=\"240\" style=\"position: absolute;\">",
               "nodeLabel": "body > img"
-            }
+            },
+            "relatedNodes": []
           },
           {
             "target": [
               "img[src$=\"lighthouse-rotating\\.gif\"]"
             ],
             "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\"",
-            "relatedNodes": [],
             "node": {
               "lhId": "5-55-IMG",
               "devtoolsNodePath": "3,HTML,1,BODY,27,IMG",
@@ -11798,14 +11908,14 @@
               },
               "snippet": "<img src=\"lighthouse-rotating.gif\" width=\"811\" height=\"462\">",
               "nodeLabel": "body > img"
-            }
+            },
+            "relatedNodes": []
           },
           {
             "target": [
               "img:nth-child(39)"
             ],
             "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\"",
-            "relatedNodes": [],
             "node": {
               "lhId": "5-56-IMG",
               "devtoolsNodePath": "3,HTML,1,BODY,66,IMG",
@@ -11818,16 +11928,16 @@
                 "width": 16,
                 "height": 16
               },
-              "snippet": "<img src=\"blob:http://localhost:10200/3f2bc9df-684b-4541-837c-1590152ef65d\">",
+              "snippet": "<img src=\"blob:http://localhost:10200/ad70cc16-bb7f-48f6-bd9a-f5005669e5a6\">",
               "nodeLabel": "body > img"
-            }
+            },
+            "relatedNodes": []
           },
           {
             "target": [
               "img:nth-child(47)"
             ],
             "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\"",
-            "relatedNodes": [],
             "node": {
               "lhId": "5-57-IMG",
               "devtoolsNodePath": "3,HTML,1,BODY,78,IMG",
@@ -11840,9 +11950,10 @@
                 "width": 16,
                 "height": 16
               },
-              "snippet": "<img src=\"filesystem:http://localhost:10200/temporary/empty-0.43448333410631723.png\">",
+              "snippet": "<img src=\"filesystem:http://localhost:10200/temporary/empty-0.9014197802517487.png\">",
               "nodeLabel": "body > img"
-            }
+            },
+            "relatedNodes": []
           }
         ]
       },
@@ -11864,7 +11975,6 @@
               "input[onpaste=\"event\\.preventDefault\\(\\)\\;\"]"
             ],
             "failureSummary": "Fix any of the following:\n  Form element does not have an implicit (wrapped) <label>\n  Form element does not have an explicit <label>\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element has no placeholder attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\"",
-            "relatedNodes": [],
             "node": {
               "lhId": "5-41-INPUT",
               "devtoolsNodePath": "3,HTML,1,BODY,61,INPUT",
@@ -11879,14 +11989,14 @@
               },
               "snippet": "<input type=\"password\" onpaste=\"event.preventDefault();\">",
               "nodeLabel": "body > input"
-            }
+            },
+            "relatedNodes": []
           },
           {
             "target": [
               "input:nth-child(37)"
             ],
             "failureSummary": "Fix any of the following:\n  Form element does not have an implicit (wrapped) <label>\n  Form element does not have an explicit <label>\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element has no placeholder attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\"",
-            "relatedNodes": [],
             "node": {
               "lhId": "5-42-INPUT",
               "devtoolsNodePath": "3,HTML,1,BODY,63,INPUT",
@@ -11901,14 +12011,14 @@
               },
               "snippet": "<input type=\"password\">",
               "nodeLabel": "body > input"
-            }
+            },
+            "relatedNodes": []
           },
           {
             "target": [
               "input[onpaste=\"return\\ false\\;\"]"
             ],
             "failureSummary": "Fix any of the following:\n  Form element does not have an implicit (wrapped) <label>\n  Form element does not have an explicit <label>\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element has no placeholder attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\"",
-            "relatedNodes": [],
             "node": {
               "lhId": "5-43-INPUT",
               "devtoolsNodePath": "3,HTML,1,BODY,65,INPUT",
@@ -11923,7 +12033,8 @@
               },
               "snippet": "<input type=\"password\" onpaste=\"return false;\">",
               "nodeLabel": "body > input"
-            }
+            },
+            "relatedNodes": []
           }
         ]
       },
@@ -11945,7 +12056,6 @@
               "a[href=\"javascript\\:void\\(0\\)\"]"
             ],
             "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute",
-            "relatedNodes": [],
             "node": {
               "lhId": "5-9-A",
               "devtoolsNodePath": "3,HTML,1,BODY,57,A",
@@ -11960,14 +12070,14 @@
               },
               "snippet": "<a href=\"javascript:void(0)\" target=\"_blank\">",
               "nodeLabel": "body > a"
-            }
+            },
+            "relatedNodes": []
           },
           {
             "target": [
               "a[href$=\"mailto\\:inbox\\@email\\.com\"]"
             ],
             "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute",
-            "relatedNodes": [],
             "node": {
               "lhId": "5-10-A",
               "devtoolsNodePath": "3,HTML,1,BODY,59,A",
@@ -11982,7 +12092,8 @@
               },
               "snippet": "<a href=\"mailto:inbox@email.com\" target=\"_blank\">",
               "nodeLabel": "body > a"
-            }
+            },
+            "relatedNodes": []
           }
         ]
       },
@@ -12002,7 +12113,6 @@
               "#\\35 934a"
             ],
             "failureSummary": "Fix any of the following:\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\"",
-            "relatedNodes": [],
             "node": {
               "lhId": "5-58-OBJECT",
               "devtoolsNodePath": "3,HTML,1,BODY,4,OBJECT",
@@ -12017,14 +12127,14 @@
               },
               "snippet": "<object id=\"5934a\">",
               "nodeLabel": "body > object#5934a"
-            }
+            },
+            "relatedNodes": []
           },
           {
             "target": [
               "#\\35 934b"
             ],
             "failureSummary": "Fix any of the following:\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\"",
-            "relatedNodes": [],
             "node": {
               "lhId": "5-59-OBJECT",
               "devtoolsNodePath": "3,HTML,1,BODY,5,OBJECT",
@@ -12039,7 +12149,8 @@
               },
               "snippet": "<object id=\"5934b\">",
               "nodeLabel": "body > object#5934b"
-            }
+            },
+            "relatedNodes": []
           }
         ]
       }
