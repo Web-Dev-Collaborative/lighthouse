@@ -11615,6 +11615,7 @@
               "html"
             ],
             "failureSummary": "Fix any of the following:\n  The <html> element does not have a lang attribute",
+            "relatedNodes": [],
             "node": {
               "lhId": "5-48-HTML",
               "devtoolsNodePath": "3,HTML",
@@ -11650,6 +11651,7 @@
               "img[src=\"lighthouse-480x318\\.jpg\\?iar1\"]"
             ],
             "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\"",
+            "relatedNodes": [],
             "node": {
               "lhId": "5-49-IMG",
               "devtoolsNodePath": "3,HTML,1,BODY,14,IMG",
@@ -11671,6 +11673,7 @@
               "img[loading=\"lazy\"]"
             ],
             "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\"",
+            "relatedNodes": [],
             "node": {
               "lhId": "5-50-IMG",
               "devtoolsNodePath": "3,HTML,1,BODY,17,IMG",
@@ -11692,6 +11695,7 @@
               "img[src=\"lighthouse-480x318\\.jpg\\?isr1\"]"
             ],
             "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\"",
+            "relatedNodes": [],
             "node": {
               "lhId": "5-51-IMG",
               "devtoolsNodePath": "3,HTML,1,BODY,19,IMG",
@@ -11713,6 +11717,7 @@
               "img[src=\"lighthouse-480x318\\.jpg\\?isr2\"]"
             ],
             "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\"",
+            "relatedNodes": [],
             "node": {
               "lhId": "5-52-IMG",
               "devtoolsNodePath": "3,HTML,1,BODY,21,IMG",
@@ -11734,6 +11739,7 @@
               "img[src=\"lighthouse-480x318\\.jpg\\?isr3\"]"
             ],
             "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\"",
+            "relatedNodes": [],
             "node": {
               "lhId": "5-53-IMG",
               "devtoolsNodePath": "3,HTML,1,BODY,23,IMG",
@@ -11755,6 +11761,7 @@
               "img[src=\"lighthouse-480x318\\.jpg\\?isr4\"]"
             ],
             "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\"",
+            "relatedNodes": [],
             "node": {
               "lhId": "5-54-IMG",
               "devtoolsNodePath": "3,HTML,1,BODY,25,IMG",
@@ -11776,6 +11783,7 @@
               "img[src$=\"lighthouse-rotating\\.gif\"]"
             ],
             "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\"",
+            "relatedNodes": [],
             "node": {
               "lhId": "5-55-IMG",
               "devtoolsNodePath": "3,HTML,1,BODY,27,IMG",
@@ -11797,6 +11805,7 @@
               "img:nth-child(39)"
             ],
             "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\"",
+            "relatedNodes": [],
             "node": {
               "lhId": "5-56-IMG",
               "devtoolsNodePath": "3,HTML,1,BODY,66,IMG",
@@ -11818,6 +11827,7 @@
               "img:nth-child(47)"
             ],
             "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\"",
+            "relatedNodes": [],
             "node": {
               "lhId": "5-57-IMG",
               "devtoolsNodePath": "3,HTML,1,BODY,78,IMG",
@@ -11854,6 +11864,7 @@
               "input[onpaste=\"event\\.preventDefault\\(\\)\\;\"]"
             ],
             "failureSummary": "Fix any of the following:\n  Form element does not have an implicit (wrapped) <label>\n  Form element does not have an explicit <label>\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element has no placeholder attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\"",
+            "relatedNodes": [],
             "node": {
               "lhId": "5-41-INPUT",
               "devtoolsNodePath": "3,HTML,1,BODY,61,INPUT",
@@ -11875,6 +11886,7 @@
               "input:nth-child(37)"
             ],
             "failureSummary": "Fix any of the following:\n  Form element does not have an implicit (wrapped) <label>\n  Form element does not have an explicit <label>\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element has no placeholder attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\"",
+            "relatedNodes": [],
             "node": {
               "lhId": "5-42-INPUT",
               "devtoolsNodePath": "3,HTML,1,BODY,63,INPUT",
@@ -11896,6 +11908,7 @@
               "input[onpaste=\"return\\ false\\;\"]"
             ],
             "failureSummary": "Fix any of the following:\n  Form element does not have an implicit (wrapped) <label>\n  Form element does not have an explicit <label>\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element has no placeholder attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\"",
+            "relatedNodes": [],
             "node": {
               "lhId": "5-43-INPUT",
               "devtoolsNodePath": "3,HTML,1,BODY,65,INPUT",
@@ -11932,6 +11945,7 @@
               "a[href=\"javascript\\:void\\(0\\)\"]"
             ],
             "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute",
+            "relatedNodes": [],
             "node": {
               "lhId": "5-9-A",
               "devtoolsNodePath": "3,HTML,1,BODY,57,A",
@@ -11953,6 +11967,7 @@
               "a[href$=\"mailto\\:inbox\\@email\\.com\"]"
             ],
             "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute",
+            "relatedNodes": [],
             "node": {
               "lhId": "5-10-A",
               "devtoolsNodePath": "3,HTML,1,BODY,59,A",
@@ -11987,6 +12002,7 @@
               "#\\35 934a"
             ],
             "failureSummary": "Fix any of the following:\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\"",
+            "relatedNodes": [],
             "node": {
               "lhId": "5-58-OBJECT",
               "devtoolsNodePath": "3,HTML,1,BODY,4,OBJECT",
@@ -12008,6 +12024,7 @@
               "#\\35 934b"
             ],
             "failureSummary": "Fix any of the following:\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\"",
+            "relatedNodes": [],
             "node": {
               "lhId": "5-59-OBJECT",
               "devtoolsNodePath": "3,HTML,1,BODY,5,OBJECT",
