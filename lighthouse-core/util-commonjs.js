@@ -521,15 +521,28 @@ class Util {
    * @param {LH.ReportResult.Category} category
    */
   static calculateCategoryFraction(category) {
-    const numAudits = category.auditRefs.length;
-
+    let numPassableAudits = 0;
     let numPassed = 0;
+    let numInformative = 0;
     let totalWeight = 0;
     for (const auditRef of category.auditRefs) {
+      const auditPassed = Util.showAsPassed(auditRef.result);
+
+      // Don't count the audit if it's manual or isn't displayed.
+      if (!auditRef.group || auditRef.result.scoreDisplayMode === 'manual') {
+        continue;
+      } else if (auditRef.result.scoreDisplayMode === 'informative') {
+        if (!auditPassed) {
+          ++numInformative;
+        }
+        continue;
+      }
+
+      ++numPassableAudits;
       totalWeight += auditRef.weight;
-      if (Util.showAsPassed(auditRef.result)) numPassed++;
+      if (auditPassed) numPassed++;
     }
-    return {numPassed, numAudits, totalWeight};
+    return {numPassed, numPassableAudits, numInformative, totalWeight};
   }
 }
 
