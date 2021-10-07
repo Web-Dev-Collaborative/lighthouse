@@ -46,6 +46,7 @@ const FlowStepAnimatedThumbnail: FunctionComponent<{
   height: number,
 }> = ({frames, width, height}) => {
   const [frameIndex, setFrameIndex] = useState(0);
+  const effectiveFrameIndex = frameIndex % frames.length;
 
   useEffect(() => {
     const interval = setInterval(() => setFrameIndex(i => (i + 1) % frames.length), 250);
@@ -56,7 +57,7 @@ const FlowStepAnimatedThumbnail: FunctionComponent<{
     <img
       className="FlowStepThumbnail"
       data-testid="FlowStepAnimatedThumbnail"
-      src={frames[frameIndex].data}
+      src={frames[effectiveFrameIndex].data}
       style={{width, height}}
       alt="Animated screenshots of a page tested by Lighthouse"
     />
@@ -84,7 +85,7 @@ export const FlowStepThumbnail: FunctionComponent<{
     return <></>;
   }
 
-  if (reportResult.gatherMode === 'timespan' && frames) {
+  if (reportResult.gatherMode === 'timespan' && frames && frames.length) {
     return <FlowStepAnimatedThumbnail frames={frames} width={width} height={height} />;
   }
 
